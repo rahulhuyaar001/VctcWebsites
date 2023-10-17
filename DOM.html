@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="parent">
+        <ul id="child">
+            <li class="items">First</li>
+            <li class="items">Second</li>
+            <li class="items">Third</li>
+            <li class="items">Forth</li>
+            <li class="items">Fifth</li>
+        </ul>
+    </div>
+
+    <script>
+       
+        /* insertAdjacentHTML('position',"String")*/ 
+        /* 
+        positons:: before begin
+                   after begin
+                   before end
+                   after end*/
+        let chld = document.getElementById('child');
+        let fchld = chld.firstElementChild.nextElementSibling.nextElementSibling;
+        fchld.insertAdjacentHTML('Beforebegin', " Beforebegin ")
+        fchld.insertAdjacentHTML('Afterbegin', " Afterbegin ")
+        fchld.insertAdjacentHTML('Beforeend', " Beforeend ")
+        fchld.insertAdjacentHTML('Afterend', " Afterend ")
+
+    </script>
+
+</body>
+
+</html>

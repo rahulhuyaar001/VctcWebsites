@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VCTCTECH</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/8c1881d4d1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- --------Header--------- -->
+    <div class="container">
+        <nav id="navbar">
+            <img src="images/logowithtext.png" width="130px" />
+            <div id="menu_links">
+                <div class="xamark">
+                    <i class="fa-solid fa-xmark" id="xmark"></i>
+                </div>
+                <ul>
+                    <li><i class="fa-solid fa-house-user"></i><a target="_blank" href="index.html">Home</a></li>
+                    <li>
+                        <i class="fa-solid fa-circle-info"></i><a target="_blank" href="about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-paper-plane"></i><a target="_blank" href="contact_us.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-image"></i><a target="_blank" href="Gallery/index.html">Institute
+                            Gallery</a>
+                    </li>
+                    <li class="dropdown">
+                        <i class="fa-solid fa-users"></i>Student Panel<i class="fa-solid fa-caret-down downarrow"></i>
+                        <div class="sub-menu">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-list-check"></i><a target="_blank"
+                                        href="admission form vctc2016.pdf" download target="_blank">Admission Form</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-comment-dollar"></i><a href="">Fee Status</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-square-poll-vertical"></i><a href="">Result</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bars">
+                <i class="fa-solid fa-bars" id="bars"></i>
+            </div>
+        </nav>
+        <div class="content">
+            <h1>Welcome in VCTC</h1>
+            <h3>Vaibhav Computer & Typing Center</h3>
+            <p>A Great Computer Education Point</p>
+            <div class="btnbox">
+                <a href="https://wa.me/+918368853827" class="btn bt1" target="_blank"><i
+                        class="fa-brands fa-whatsapp"></i>Direct Message</a>
+                <a href="courses/courses.html" class="btn bt2" target="_blank"><i class="fa-solid fa-book"></i>Courses
+                    Info.</a>
+            </div>
+        </div>
+
+        <div id="preloader">
+
+        </div>
+    </div>
+
+    <script>
+
+        let menu_links = document.getElementById('menu_links');
+        let xmark = document.getElementById('xmark');
+        let bars = document.getElementById('bars');
+
+
+        bars.addEventListener('click', function () {
+            menu_links.style.transform = "translate(0)"
+        })
+
+        xmark.addEventListener('click', function () {
+            menu_links.style.transform = "translate(100%)"
+        })
+    </script>
+    <script>
+        var loader = document.getElementById('preloader');
+        window.addEventListener('load', function () {
+            loader.style.display = "none"
+        })
+    </script>
+</body>
+
+</html>

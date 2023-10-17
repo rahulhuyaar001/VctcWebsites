@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conatect Us</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contect-form {
+            margin: 20px;
+        }
+
+        form {
+            flex-basis: 40%;
+            background-color: #fff;
+            margin-top: 10px;
+
+            padding: 3px;
+            padding: 30px;
+        }
+
+        .name-email,
+        .subject,
+        .mobile,
+        .message {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .name-email input {
+            width: 43%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .subject input {
+            width: 100%;
+            display: inline-block;
+            outline: none;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+        }
+
+        .mobile input {
+            width: 100%;
+            display: inline-block;
+            outline: none;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            width: 100%;
+            outline: none;
+            display: inline-block;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+        }
+
+        form div {
+            margin-bottom: 30px;
+        }
+
+        form button {
+            box-shadow: 3px 3px 10px rgb(0 0 0 / 15%), -1px -1px 10px rgb(0 0 0 / 15%);
+            background-color: #2b7a78;
+            color: #fff;
+            transition: 0.5s;
+            cursor: pointer;
+            padding: 10px 15px;
+            border: none;
+            font-weight: 500;
+            margin-right: 20px;
+        }
+
+        form button:hover {
+            background-color: #fff;
+            color: #2b7a78;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width:770px) {
+
+            form {
+                width: 83%;
+                margin-top: 10px;
+                margin: 20px auto;
+
+            }
+
+            form textarea {
+                height: 20vh;
+            }
+
+
+
+            .container {
+                flex-direction: column;
+                padding: 20px 0;
+
+            }
+
+            body {
+                background-color: #2b7a78;
+            }
+
+            .name-email input {
+                width: 40%;
+            }
+
+            .map {
+                padding: 30px 0 50px 0;
+            }
+
+            ifram {
+                margin-top: 20px;
+            }
+        }
+
+        .container {
+            width: 100%;
+            background-color: #2b7a78;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .map {
+            flex-basis: 55%;
+            margin-top: 20px;
+        }
+
+        .contect-form {
+            flex-basis: 40%;
+            text-align: center;
+
+        }
+
+        .contect-form h1 {
+            color: #fff;
+            text-decoration: underline;
+
+        }
+
+
+        /* ------------maps------------- */
+
+        .map {
+            text-align: center;
+            width: 100%;
+        }
+
+        .map h1 {
+            font-size: 25px;
+            font-weight: 600;
+            padding-bottom: 25px;
+            color: #fff;
+        }
+
+        .address {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .address p span {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .map iframe {
+            width: 90%;
+            height: 483px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="contect-form">
+            <h1>Contect Us</h1>
+            <form>
+                <div class="name-email">
+                    <input type="text" class="username" placeholder="Your Name*" required>
+                    <input type="email" class="email" required placeholder="Your Email*">
+                </div>
+
+                <div class="mobile">
+                    <input type="number" placeholder="Mobile Number*" required maxlength="10">
+                </div>
+                <div class="subject">
+                    <input type="text" placeholder="Subject*">
+                </div>
+                <div class="message">
+                    <textarea name="message" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+                </div>
+                <button type="submit">SEND MESSAGE</button>
+                <button type="reset">RESET</button>
+            </form>
+
+        </div>
+        <div class="map">
+            <div class="address">
+                <p><span>ADDRESS :</span> Near Mother Dairy, B-9 Sector-4 Rohini</p>
+                <p><span>EMAIL ID :</span> contact@vctctech.org </p>
+                <p><span>CONTECT NO. :</span>
+                    Mr.Sunil Goel(M.D)
+                    +91-9311115396,
+                    +011-27055398<br>
+                    Mr.Vibhor Goel(Sr. Faculty)
+                    +91-8285724702</p>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d223955.9839525689!2d77.101439!3d28.710213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd43f8ec850b9c7c!2sVaibhav%20Computer%20%26%20Typing%20Centre%20(%20VCTC%20)!5e0!3m2!1sen!2sin!4v1654847220456!5m2!1sen!2sin"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
